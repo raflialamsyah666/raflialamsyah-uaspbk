@@ -1,30 +1,31 @@
-# uasprak
+Sistem Informasi Perpustakaan Digital
+    Aplikasi perpustakaan berbasis web modern yang dikembangkan dengan Vue.js, Vue Router, Pinia, dan json-server. Aplikasi ini dirancang untuk memudahkan pengelolaan buku, anggota, transaksi peminjaman dan pengembalian, serta menampilkan laporan perpustakaan dalam UI yang hidup dan modern.
 
-This template should help get you started developing with Vue 3 in Vite.
+Fitur Utama
+1.Login & Logout Sederhana
+2.Dashboard Interaktif
+3.Manajemen Buku
+4.Daftar Buku
+5.Tambah Buku
+6.Kategori Buku
+7.Manajemen Anggota
+8.Daftar Anggota
+9.Tambah Anggota
+10.Transaksi
+11.Peminjaman
+12.Pengembalian
+13.Riwayat
+14.Laporan
+15.Peminjaman
+16.Inventaris Buku
+17.Profil & Pengaturan
 
-## Recommended IDE Setup
+🧪 Unit Testing dengan Vitest
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# raflialamsyah-uaspbk
+Teknologi yang Digunakan
+Vue.js 3
+Vue Router
+Pinia
+json-server
+Vitest untuk unit testing
+CSS Custom (Tailwind-style) & animasi keyframes# raflialamsyah-uaspbk
