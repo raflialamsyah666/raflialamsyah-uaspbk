@@ -13,29 +13,38 @@
       "alamat": "Jl. Anggrek No. 12"
     },
     {
-      "id": "da8c",
+      "id": 3,
       "nama": "Rafli Alamsyah ",
       "email": "raflialamsyah666@gmail.com",
       "alamat": "JL. CENDRAWASIH NO. 1"
+    },
+    {
+      "id": 4,
+      "nama": "ARIYADI MANDALA PUTRA",
+      "email": "ariyadi@gmail.com",
+      "alamat": "JL. CENDRAWASIH NO. 1"
+    },
+    {
+      "id": 5,
+      "nama": "ARIYADI MANDAL PUTRAwqwq",
+      "email": "raflialamsyah666@gmail.com",
+      "alamat": "qwqwqw"
+    },
+    {
+      "id": 6,
+      "nama": "ARIYADI MANDAL PUTRAwqwqwaawaw",
+      "email": "raflialamsyah666@gmail.com",
+      "alamat": "qwqwqwawawaw"
     }
   ],
   "buku": [
     {
-      "id": "0628",
-      "judul": "12",
-      "penulis": "3123123",
-      "tahun": 3123123123,
-      "kategori": "Fiksi"
+      "id": "6292",
+      "judul": "Otomotif",
+      "penulis": "Rafli",
+      "tahun": 2025,
+      "kategori": "Teknologi"
     }
   ],
-  "transaksi": [
-    {
-      "id": "2508",
-      "anggotaId": 1,
-      "bukuId": 628,
-      "tanggal": "2025-07-10",
-      "status": "dikembalikan",
-      "tanggalPengembalian": "2025-07-08"
-    }
-  ]
+  "transaksi": []
 }

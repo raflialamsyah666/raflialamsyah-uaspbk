@@ -1,9 +1,11 @@
+// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 
 import Dashboard from '@/views/Dashboard.vue';
 import Login from '@/views/Login.vue';
 import BukuList from '@/views/buku/BukuList.vue';
 import BukuAdd from '@/views/buku/BukuAdd.vue';
+import BukuEdit from '@/views/buku/EditBuku.vue'; // 👈 Tambahkan import Edit Buku
 import BukuKategori from '@/views/buku/BukuKategori.vue';
 import AnggotaList from '@/views/anggota/AnggotaList.vue';
 import AnggotaAdd from '@/views/anggota/AnggotaAdd.vue';
@@ -24,6 +26,7 @@ const routes = [
     children: [
       { path: '', component: BukuList },
       { path: 'tambah', component: BukuAdd },
+      { path: 'edit/:id', component: BukuEdit }, // ✅ Rute Edit Buku
       { path: 'kategori', component: BukuKategori }
     ]
   },
