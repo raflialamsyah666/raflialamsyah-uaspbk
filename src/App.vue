@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <aside class="sidebar">
+    <aside class="sidebar" v-if="!isLoginPage">
       <router-link to="/dashboard" class="menu-item">🏠 Dashboard</router-link>
       <router-link to="/buku" class="menu-item">📚 Buku</router-link>
       <router-link to="/buku/tambah" class="menu-sub">➕ Tambah Buku</router-link>
@@ -16,16 +16,20 @@
       <button class="logout-button" @click="logout">🚪 Logout</button>
     </aside>
 
-    <main class="content">
+    <main :class="['content', { 'no-sidebar': isLoginPage }]">
       <router-view />
     </main>
   </div>
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
+import { computed } from 'vue';
 
 const router = useRouter();
+const route = useRoute();
+
+const isLoginPage = computed(() => route.path === '/login');
 
 const logout = () => {
   localStorage.clear();
@@ -37,6 +41,11 @@ const logout = () => {
 .layout {
   display: flex;
   min-height: 100vh;
+}
+
+.content.no-sidebar {
+  margin-left: 0;
+  width: 100%;
 }
 
 .sidebar {
