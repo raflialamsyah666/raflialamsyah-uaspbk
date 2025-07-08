@@ -1,0 +1,41 @@
+{
+  "anggota": [
+    {
+      "id": 1,
+      "nama": "Ahmad Fauzi",
+      "email": "ahmad@example.com",
+      "alamat": "Jl. Merdeka No. 45"
+    },
+    {
+      "id": 2,
+      "nama": "Siti Aminah",
+      "email": "siti@example.com",
+      "alamat": "Jl. Anggrek No. 12"
+    },
+    {
+      "id": "da8c",
+      "nama": "Rafli Alamsyah ",
+      "email": "raflialamsyah666@gmail.com",
+      "alamat": "JL. CENDRAWASIH NO. 1"
+    }
+  ],
+  "buku": [
+    {
+      "id": "0628",
+      "judul": "12",
+      "penulis": "3123123",
+      "tahun": 3123123123,
+      "kategori": "Fiksi"
+    }
+  ],
+  "transaksi": [
+    {
+      "id": "2508",
+      "anggotaId": 1,
+      "bukuId": 628,
+      "tanggal": "2025-07-10",
+      "status": "dikembalikan",
+      "tanggalPengembalian": "2025-07-08"
+    }
+  ]
+}
