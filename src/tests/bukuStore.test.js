@@ -1,30 +1,19 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { createTestingPinia } from '@pinia/testing';
-import { setActivePinia } from 'pinia';
-import { useBukuStore } from '../stores/bukuStore';
+import { describe, it, expect, beforeEach } from 'vitest'
+import { createPinia, setActivePinia } from 'pinia'
+import { useBukuStore } from '@/stores/bukuStore'
 
 describe('Buku Store', () => {
+  let store
+
   beforeEach(() => {
-    setActivePinia(createTestingPinia({
-      createSpy: vi.fn,
-      stubActions: false
-    }));
-  });
+    setActivePinia(createPinia())
+    store = useBukuStore()
+  })
 
   it('menambahkan buku ke dalam daftar', () => {
-    const store = useBukuStore();
+    const bukuBaru = { id: 1, judul: 'Buku A', penulis: 'Rafli' }
+    store.tambahBuku(bukuBaru)
 
-    const bukuBaru = {
-      id: '1',
-      judul: 'Belajar Vue',
-      penulis: 'Rafli',
-      tahun: 2025,
-      kategori: 'Teknologi'
-    };
-
-    store.tambahBuku(bukuBaru);
-
-    expect(store.daftar).toHaveLength(1);
-    expect(store.daftar[0]).toEqual(bukuBaru);
-  });
-});
+    expect(store.bukuList).toContainEqual(bukuBaru)
+  })
+})

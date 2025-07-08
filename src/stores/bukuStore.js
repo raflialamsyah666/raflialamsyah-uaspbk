@@ -1,13 +1,12 @@
-
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 
 export const useBukuStore = defineStore('buku', {
   state: () => ({
-    daftar: []
+    bukuList: [] 
   }),
   actions: {
-    tambahBuku(bukuBaru) {
-      this.daftar.push(bukuBaru);
+    tambahBuku(buku) {
+      this.bukuList.push(buku)
     }
   }
-});
+})

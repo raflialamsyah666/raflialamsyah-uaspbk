@@ -24,11 +24,10 @@ const form = ref({
 
 const submitForm = async () => {
   try {
-    // Ambil semua anggota dulu
+   
     const res = await axios.get('http://localhost:3000/anggota')
     const anggotaList = res.data
 
-    // Cari ID terbesar dan tambah 1
     const maxId = anggotaList.length
       ? Math.max(...anggotaList.map(a => Number(a.id) || 0))
       : 0
@@ -38,7 +37,6 @@ const submitForm = async () => {
       ...form.value
     }
 
-    // Simpan anggota baru
     await axios.post('http://localhost:3000/anggota', newAnggota)
     alert('Anggota berhasil ditambahkan!')
     router.push('/anggota')
