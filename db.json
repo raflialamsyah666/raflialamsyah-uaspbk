@@ -35,6 +35,18 @@
       "nama": "ARIYADI MANDAL PUTRAwqwqwaawaw",
       "email": "raflialamsyah666@gmail.com",
       "alamat": "qwqwqwawawaw"
+    },
+    {
+      "id": 7,
+      "nama": "Dzaki Ganteng",
+      "email": "jakiaowkoakw@gmail.com",
+      "alamat": "Simpang Bingung"
+    },
+    {
+      "id": 8,
+      "nama": "Isat",
+      "email": "isat@gmail.com",
+      "alamat": "indonesia"
     }
   ],
   "buku": [
@@ -44,7 +56,31 @@
       "penulis": "Rafli",
       "tahun": 2025,
       "kategori": "Teknologi"
+    },
+    {
+      "id": "6601",
+      "judul": "Matematika Diskrit",
+      "penulis": "Ari",
+      "tahun": 2021,
+      "kategori": "Sains"
     }
   ],
-  "transaksi": []
+  "transaksi": [
+    {
+      "id": "e627",
+      "anggotaId": 7,
+      "bukuId": null,
+      "tanggal": "2025-07-10",
+      "status": "dikembalikan",
+      "tanggalPengembalian": "2025-07-08"
+    },
+    {
+      "id": "92f2",
+      "anggotaId": 8,
+      "bukuId": 6601,
+      "tanggal": "2025-07-09",
+      "status": "dikembalikan",
+      "tanggalPengembalian": "2025-07-08"
+    }
+  ]
 }

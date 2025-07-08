@@ -1,4 +1,3 @@
-<reference types="vitest" />
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import TambahBuku from '@/views/buku/BukuAdd.vue'
